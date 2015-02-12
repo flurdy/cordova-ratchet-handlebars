@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello world</title>
+	<link rel="stylesheet" href="bower_components/ratchet/dist/ratchet.min.css" />
+</head>
+<body>
+	<div class="content">
+		<h1>Hello world</h1>
+	</div>
+	<script id="header-template" type="text/template">
+		<h1>Good bye</h1>
+	</script>
+	<script src="cordova.js"></script>
+	<script type="text/javascript"
+		src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript"
+		src="bower_components/fastclick/lib/fastclick.js"></script>
+	<script type="text/javascript"
+		src="bower_components/handlebars/handlebars.min.js"></script>
+	<script>
+		$(function(){
+			var headerTemplate = Handlebars.compile($("#header-template").html());
+			$('.content').html(headerTemplate);
+		});
+	</script>
+</body>
+</html> 

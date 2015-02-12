@@ -1,0 +1,18 @@
+{
+  "name": "pizzeria",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ratchet": "~2.0.2",
+    "handlebars": "~3.0.0",
+    "fastclick": "~1.0.6",
+    "jquery": "~2.1.3"
+  }
+}
